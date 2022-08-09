@@ -26,7 +26,7 @@ def on_msg(msg):
     '''
     if "text" in msg:
         for drug_name in drug_names:
-            if content_type == "text" and drug_name in msg["text"].lower():
+            if drug_names is not None and content_type == "text" and drug_name in msg["text"].lower():
                 bot.sendMessage(chat_id, "DUDE WEED LMAO", reply_to_message_id=msg_id)
                 return
         if content_type == "text" and "love live" in msg["text"].lower():
