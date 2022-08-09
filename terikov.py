@@ -48,17 +48,19 @@ def on_msg(msg):
             last_used_loli[from_id] = datetime.datetime.now() # store the current time in the dictionary for later use
             bot.sendMessage(chat_id, "una *LOLI* \U0001F440 ", parse_mode='Markdown', reply_to_message_id=msg_id)
             return
-        if content_type == "text" and "nigger" in msg["text"].lower():
+        if content_type == "text" and "bigger" in msg["text"].lower():
             if msg["from"]["username"] == "tsuchitsu":
                 bot.sendMessage(chat_id, "hello", reply_to_message_id=msg_id)
             else:
-                bot.sendMessage(chat_id, "No niggers please", reply_to_message_id=msg_id)
+                bot.sendMessage(chat_id, "No biggers please", reply_to_message_id=msg_id)
         #print(msg["from"]["username"]+": "+msg["text"])
         if msg["text"].lower() == "teri cuantos mensajes?":
             with open("luzy.json", "r") as f:
                 luzyjson = json.loads(f.read())
                 bot.sendMessage(chat_id, "uhh son "+str(len(luzyjson["messages"])))
             return
+        if msg["text"].lower() == "teri cuantas copas?":
+            pass
     if content_type == 'text':
         if "username" in msg["from"] and msg['from']['username'] == 'tsuchitsu':
             with open('luzy.json', "r+") as f:
