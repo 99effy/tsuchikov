@@ -1,5 +1,4 @@
 #! /bin/bash
-exec 2>>error.log
 [ -z "${TELEGRAM_TOKEN}" ] && read -p "paste your telegram token here >" \
 TELEGRAM_TOKEN && echo -e "TELEGRAM_TOKEN=${TELEGRAM_TOKEN}" >>"${HOME}"/\
 .bashrc && source "${HOME}/.bashrc"
