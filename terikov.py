@@ -8,7 +8,7 @@ import time
 import datetime
 from telepot.loop import MessageLoop
 
-bot = telepot.Bot('5484813771:AAHjwPr70E7lNBUj1GBsHN6XvpUJQuFHy0s')
+bot = telepot.Bot('os.environ['TELEGRAM_TOKEN']')
 
 if not os.path.exists('luzy.json'):
     with open('luzy.json', 'w') as f:
