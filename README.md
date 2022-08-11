@@ -1,9 +1,5 @@
-# **tsuchikov**
-The most awful bot on earth
----
-
+# **The most awful bot on earth**
 ¿Se automatiza lads?
-
 ---
 ## Como hago para usar esto?????
 ---
