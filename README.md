@@ -1,5 +1,5 @@
 # **The most awful bot on earth**
-¿Se automatiza lads?
+The only reason this repo exists is cause none of my friends wanted to host this crap
 ---
 ## Como hago para usar esto?????
 ---
